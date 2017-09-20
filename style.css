@@ -4,6 +4,7 @@
 .main {
     width: 100%;
     background-color: white;
+    overflow-x: hidden;
 }
 
 .menus {
