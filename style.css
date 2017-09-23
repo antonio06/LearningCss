@@ -4,7 +4,7 @@
 .main {
     width: 100%;
     background-color: white;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .menus {
@@ -124,16 +124,25 @@ a {
 
 .menuResponsive {
     background-color: #34495e;
-    width: 19%;
+    width: 50%;
     height: 100%;
     position: absolute;
+    transform: translateX(-300px);
+    transition: all ease .5s;
+}
+
+.menuResponsiveOpened {
+    transform: translateX(0px);
+}
+
+.menuResponsiveClosed {
     transform: translateX(-300px);
 }
 
 .menuResponsive ul li {
     display: inherit;
     font-family: sans-serif;
-    width: 29%;
+    width: 38%;
 }
 
 .socialMedia {
@@ -204,7 +213,7 @@ a {
     }
 }
 
-@media screen and (min-width: 235px) and (max-width: 375px){
+@media screen and (max-width: 375px){
     
     .menu2 {
         display: none;
@@ -219,15 +228,16 @@ a {
     }
 
     .hamburguer {
-        display: inline;
+        display: block;
+        text-align: center;
     }
 
     .hamburguer i {
         padding-left: 5px;
         padding-top: 15px;
         padding-bottom: 15px;
-        margin-left: 45%;
-        margin-right: 50%;
+        /* margin-left: 45%;
+        margin-right: 50%; */
     }
 
     .text p {
