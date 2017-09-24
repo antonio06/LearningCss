@@ -127,16 +127,16 @@ a {
     width: 50%;
     height: 100%;
     position: absolute;
-    transform: translateX(-300px);
+    transform: translateX(-300%);
     transition: all ease .5s;
 }
 
 .menuResponsiveOpened {
-    transform: translateX(0px);
+    transform: translateX(0%);
 }
 
 .menuResponsiveClosed {
-    transform: translateX(-300px);
+    transform: translateX(-300%);
 }
 
 .menuResponsive ul li {
@@ -245,6 +245,12 @@ a {
     }
 
     .text {
+        width: 100%;
+    }
+
+    .menuResponsive ul li {
+        display: inherit;
+        font-family: sans-serif;
         width: 100%;
     }
 }
